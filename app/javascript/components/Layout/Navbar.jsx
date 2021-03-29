@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a href="/" className="nav-link">Home</a>
+                        <button className="nav-link dropdown-toggle" id="navMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
                     </li>
                     <li className="nav-item dropdown">
                         <button className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
