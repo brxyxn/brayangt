@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps
+Create App
+Setup Database
+Create Home#Index root
+Adding FrontEnd dependencies
+```
+bundle add bootstrap
+yarn add react-router-dom bootstrap jquery popper.js
+```
+Create ./Index
+Create ./components/App
+create ./components/Home/IndexHome
+comment Turbolinks from application.js
+remove turbolinks from application.html.erb
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Debug setup
+bundle add ruby-debug-ide --group development
+bundle add debase --group development
+>Launch.json add: 
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Rails server",
+      "type": "Ruby",
+      "request": "launch",
+      "program": "${workspaceRoot}/bin/rails",
+      "args": [
+        "server"
+      ],
+      "cwd": "${workspaceRoot}",
+      "useBundler": true
+    }
+  ]
+}
+```
